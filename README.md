@@ -1,4 +1,4 @@
-# Hub Lading Page - Next
+# Hub Landing Page - Next
 
 Version 0.1
 
