@@ -19,7 +19,8 @@
     "test-coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "coverage": "npm test -- --coverage"
   },
   "eslintConfig": {
     "extends": [
@@ -67,5 +68,16 @@
     "prop-types": "15.8.1",
     "storybook": "7.0.10",
     "webpack": "5.82.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "./src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>./src/*.{js,jsx,ts,tsx}",
+      "!<rootDir>./src/**/*mock*.{js,jsx,ts,tsx}",
+      "!<rootDir>./src/styles/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/**/stories.{js,jsx,ts,tsx}",
+      "!<rootDir>./src/templates/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/"
+    ]
   }
 }
